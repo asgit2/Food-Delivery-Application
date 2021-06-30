@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<body>
+    <section id="special" class="container-fluid">
+        <div class="heading text-center">
+        <h1><span> Restaurants</span></h1>
+        </div>
+        <div >
+            <div class="card-container">
+                <div class="card" *ngFor="let REST of restaurant">
+                    <img src="{{REST.url}}" alt="Can't load the image" style="padding-bottom: 10px;">
+                    <hr><hr>
+                    <h5>{{REST.restaurantName}}</h5>
+                    <h6>{{REST.city}},{{REST.state}}</h6>
+                    <hr><hr>
+                    <a routerLink="/getByRestaurant"><button class="btn">Show Menu</button></a>
+                </div>
+            </div>
+        </div>
+    </section>              
+</body>
+</html>

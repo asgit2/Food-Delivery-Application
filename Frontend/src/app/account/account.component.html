@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="./account.component.css">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    </head>
+    <body>
+
+        <!-- Account Page -->
+        <div class="account-page" >
+            <div class="container">
+                <div class="row">
+                    <div class="col-2">
+                        <img src="https://static.vecteezy.com/system/resources/previews/000/273/542/non_2x/online-food-order-concept-vector.jpg" alt="Images to add" width="100%">
+                    </div>
+                    <div class="col-2">
+                        <div class="form-container">
+                            <div class="form-btn">
+                                <span>Register</span>
+                                <hr id="Indicator">
+                            </div>
+
+                            <form id="RegForm">
+                                <input type="text" placeholder="Username" name="username" >
+                                <input type="password" placeholder="Password" names="password" >
+                                <button type="submit" class="btn"  routerLink="/customerReg"> Register as User</button>
+                                <button type="submit" class="btn"  routerLink="/RestaurantEnrollment" >Enroll A Resturant</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </body>
+
+</html>

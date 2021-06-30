@@ -1,0 +1,15 @@
+<h1>Display All the menu</h1>
+<button (click)="getMenuData()">Display In console</button>
+
+<h1>Add A new menu </h1>
+<form >
+<input type="text" name="name" placeholder="name" [(ngModel)]="menu.name"><br>
+<input type="text" name="description" placeholder="description" [(ngModel)] ="menu.description"><br>
+<input type="number" name="price" placeholder="price" [(ngModel)]="menu.price"><br>
+<input type="text" name="category" placeholder="Category" [(ngModel)]="menu.category"><br>
+<button (click)="addNewMenu()">Add Menu</button>
+</form>
+
+<h1>Delete a Menu Enter the menu ID</h1>
+<input type="number" [(ngModel)]="menu.menuId">
+<button (click)="deleteMenu()">Delete</button>

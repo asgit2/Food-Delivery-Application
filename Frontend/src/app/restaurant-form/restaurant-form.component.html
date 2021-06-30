@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <div class="Registration-page">
+        <div class="container">
+            <div class="row">
+                <div class="col-2">
+                    <img src="https://www.indifi.com/blog/wp-content/uploads/2020/02/Bring-Your-Business-Online-For-Restaurants-500x281.jpg" alt="Image to add" width="100%">
+                </div>
+                <div class="col-2">
+                    <div class="form-container">
+                        <div class="form-btn">
+                            <span>Restaurant Registration</span>
+                            <hr id="Indicator">
+                        </div>
+                        
+                        <form id="RegForm" action="">
+                            <input type="text" name="restaurantName" placeholder="restaurant Name" [(ngModel)]="restaurant.restaurantName">
+                            <input type="text" name="address" placeholder="address" [(ngModel)]="restaurant.address">
+                            <input type="text" name="city" placeholder="City" [(ngModel)]="restaurant.city">
+                            <input type="text" name="state" placeholder="state" [(ngModel)]="restaurant.state">
+                            <input type="text" name="phone" placeholder="phone" [(ngModel)]="restaurant.phone">
+                            <input type="email" name="email" placeholder="Email Address" [(ngModel)]="restaurant.email">
+                            <button type="submit" class="btn" (click)="addNewRestaurant()" routerLink="/AddMenus"> Register</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

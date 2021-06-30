@@ -1,0 +1,25 @@
+
+    <section id="dish" class="container">
+
+        <div class="heading text-center">
+            <h1>The<span>Menu</span></h1>
+        </div>
+        <div class="box-container">
+            <div *ngFor="let menu of menus" style="display: inline-block;">
+                <div class="card" style="width: 12rem;">
+                    <img src="{{menu.url}}" height="100%" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">{{menu.name}}</h5>
+                      <p class="card-text">{{menu.description}}</p>
+                      <span class="badge bg-secondary rounded-pill">{{menu.price | currency:'INR'}}</span><br><br>
+                      <a (click)="addtoCart(menu.name,menu.price)" class="btn btn-primary">Add to cart</a>
+                    </div>
+                  </div>
+                  
+              </div>
+    
+        </div>
+    
+    </section>
+    
+    

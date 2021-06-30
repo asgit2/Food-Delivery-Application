@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./customer-form.component.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <div class="Registration-page">
+        <div class="container">
+            <div class="row">
+                <div class="col-2">
+                    <img src="" alt="Image to add" width="100%">
+                </div>
+                <div class="col-2">
+                    <div class="form-container">
+                        <div class="form-btn">
+                            <span>Customer Registration</span>
+                            <hr id="Indicator">
+                        </div>
+
+                        <form id="RegForm">
+                            <input type="text" placeholder="First Name" name="firstName" [(ngModel)]="theCustomer.firstName" required>
+                            <input type="text" placeholder="Last Name" name="lastName" [(ngModel)]="theCustomer.lastName" required>
+                            <input type="email" placeholder="Email" name="email" [(ngModel)]="theCustomer.email" required>
+                            <input type="text" placeholder="Address" name="address" [(ngModel)]="theCustomer.address" required>
+                            <input type="text" placeholder="City" name="city" [(ngModel)]="theCustomer.city" required>
+                            <input type="text" placeholder="State" name="state" [(ngModel)]="theCustomer.state" required>
+                            <input type="text" placeholder="Phone Number" name="phoneNo" [(ngModel)]="theCustomer.phoneNo" required>
+                            <button type="submit" class="btn" routerLink="#" (click)="addCustomerDetails()"> Register</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

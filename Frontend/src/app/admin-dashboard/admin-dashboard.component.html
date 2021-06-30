@@ -1,0 +1,40 @@
+<div class="admin container">
+    <h2>Admin Dashboard</h2>
+
+        <div class="row">
+            <h4 class="d-flex justify-content-between align-item-center">
+                <span class="text-muted">Restaurant</span>
+            </h4>
+            <ul class="list-group" *ngFor="let rest of restaurant, index as i ">
+                <li class="list-group-item d-flex justify-content-between">
+                    <div>
+                        <span class="text-muted">{{rest.restaurantName}}</span> 
+                        <span> | </span>
+                        <span class="text-muted">{{rest.city}} , {{rest.state}}</span>
+                    </div>
+                </li>
+            </ul>
+            
+        </div>
+    
+        
+        <div class="row">
+            <h4 class="d-flex justify-content-between align-item-center">
+                <span class="text-muted">Menu</span>
+            </h4>
+            <ul class="list-group" *ngFor="let menu of menus, index as i ">
+                <li class="list-group-item d-flex justify-content-between">
+                    <div>
+                        <span class="text-muted">{{menu.name}}</span> 
+                        <span> | </span>
+                        <span class="text-muted">{{menu.description}}</span>
+                    </div>
+                    <span class="text-muted">{{menu.price | currency:'INR'}}</span>
+                </li>
+            </ul>
+            
+        </div>
+    
+</div>    
+
+

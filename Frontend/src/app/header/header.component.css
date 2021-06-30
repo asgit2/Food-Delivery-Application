@@ -1,0 +1,133 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  body {
+    font-family: "Poppins", sans-serif;
+  }
+  
+  .navbar {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    position: sticky;
+  }
+  nav {
+    flex: 1;
+    text-align: right;
+  }
+  nav ul {
+    display: inline-block;
+    list-style-type: none;
+  }
+  nav ul li {
+    display: inline-block;
+    margin-right: 20px;
+  }
+  a {
+    text-decoration: none;
+    color: #555;
+  }
+  p {
+    color: #555;
+  }
+  
+  .container {
+    max-width: 1300px;
+    margin: auto;
+    padding-left: 25px;
+    padding-right: 25px;
+  }
+  
+  .row {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+  .col-2 {
+    flex-basis: 50%;
+    min-width: 300px;
+    
+  }
+  .col-2 img {
+    max-width: 50%;
+    padding: 50px 0;
+  }
+  
+  .col-2 h1 {
+    font-size: 40px;
+    line-height: 60px;
+    margin: 25px 0;
+  }
+  .btn {
+    display: inline-block;
+    background: #ff523b;
+    color: #fff;
+    padding: 8px 30px;
+    margin: 30px 0;
+    border-radius: 30px;
+    transition: background 0.5s;
+  }
+  .btn:hover {
+    background: #563434;
+    opacity: 70%;
+  }
+  
+  .header {
+    background-image: url(src\assets\Background.jpg);
+  }
+  .header .row {
+    margin-top: 70px;
+  }
+  .menu-icon {
+    width: 28px;
+    margin-left: 20px;
+    display: none;
+  }
+
+  .content-header{
+    padding-left: 40px;
+  }
+
+  
+/* Search Bar */
+.search {
+  width: 100%;
+  position: relative;
+  display: flex;
+}
+
+.searchTerm {
+  width: 100%;
+  border: 3px solid #ff523b;
+  border-right: none;
+  padding: 5px;
+  height: 35px;
+  border-radius: 5px 0 0 5px;
+  outline: none;
+  color: #9DBFAF;
+}
+
+.searchTerm:focus{
+  color: #ff523b;
+}
+
+.searchButton {
+  width: 40px;
+  height: 36px;
+  border: 1px solid #ff523b;
+  background: #ff523b;
+  text-align: center;
+  color: #fff;
+  border-radius: 0 5px 5px 0;
+  cursor: pointer;
+  font-size: 20px;
+}
+
+.search-bar{
+  padding-bottom: 20px;
+  margin-bottom: 20px;
+  margin-top: 10px;
+}

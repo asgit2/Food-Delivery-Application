@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Header</title>
+    <link rel="stylesheet" href="./header.component.css" type="text/css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <div class="header">
+        <div class="container">
+            <div class="navbar">
+                <div class="logo">
+                    <a><img src="https://www.pinclipart.com/picdir/big/86-862588_mobi-food-logo-gif-clipart.png" alt="logo" width="100px"></a>
+                    
+                </div>
+                <nav>
+                    <ul id="MenuItems">
+                        <li><a href="#">Home</a></li>
+                        <li><a routerLink="/displayMenu">Menu</a></li>
+                        <li><a routerLink="/viewRestaurant">Restaurant</a></li>
+                        <li><a href="#Reserve">Reserve</a></li>
+                        <li><a routerLink="/cart">Cart</a></li>
+                        <li><a routerLink="/login">SignIn</a></li>
+                        <li><a routerLink="/account">Register</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="row content-header">
+                <div class="col-2">
+                    <h1>Cooking gone wrong ? </h1>
+                    <p>Order food from favourite restaurants near you
+                    </p>
+                    <div class="search-bar">
+                        <div class="wrap">
+                            <div class="search">
+                               <input type="text" [(ngModel)]="cityname" class="searchTerm" placeholder="Enter you city">
+                               <button type="submit" routerLink="" class="searchButton">
+                                <i class="fa fa-search"></i>
+                              </button>
+                            </div>
+                         </div>
+                    </div>
+                    
+                </div>
+                <div class="col-2">
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./menu-form.component.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <div class="Add-Menu-Form">
+        <div class="container">
+            <div class="row">
+                <div class="col-2">
+                    <img src="https://www.clipartmax.com/png/middle/418-4189168_restaurant-menu-royalty-free-vector-clip-art-illustration-restaurant-menu-menu-clipart.png" alt="Image to add" width="100%">
+                </div>
+                <div class="col-2">
+                    <div class="form-container">
+                        <div class="form-btn">
+                            <span>Add Menu</span>
+                            <hr id="Indicator">
+                        </div>
+                        
+                        <form id="RegForm" action="">
+                            <input type="text" name="menuId" placeholder="menuId"  [(ngModel)] ="menu.menuId">
+                            <input type="text" name="name" placeholder="name" [(ngModel)]="menu.name">
+                            <input type="text" name="description" placeholder="description" [(ngModel)] ="menu.description">
+                            <input type="text" name="category" placeholder="Category" [(ngModel)]="menu.category">
+                            <input type="text" name="price" placeholder="price" [(ngModel)]="menu.price">
+                            <button type="submit" class="btn" (click)="addNewMenu()">Add</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

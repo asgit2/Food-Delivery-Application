@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <div class="BookATable-Form" id="Reserve">
+        <div class="container">
+            <div class="row">
+                <div class="col-2">
+                    <img src="https://lerablog.org/wp-content/uploads/2017/07/fregew.jpg" alt="..." width="100%">
+                </div>
+                <div class="col-2">
+                    <div class="form-container">
+                        <div class="form-btn">
+                            <span>Reserve A Table</span>
+                            <hr id="Indicator">
+                        </div>
+                        
+                        <form id="RegForm" action="">
+                            <input type="text" placeholder="Name" name="name" [(ngModel)]="reserve.name">
+
+                            <select required placeholder="Select Restaurant" name='restaurantName' class="dropDown" [(ngModel)]="reserve.restaurantName">
+                                <option value="" disabled selected>Select Restaurant</option>
+                                <option value="Suruchi Hotel">Suruchi Hotel</option>
+                                <option value="Novelty">Novelty</option>
+                                <option value="Fusion Restaurant">Fusion Restaurant</option>
+                                <option value="Snapchat Resto Cafe">Snapchat Resto Cafe</option>
+                            </select>
+                            
+                                <select required name='day' class="dropDown" [(ngModel)]="reserve.day">
+                                    <option value="" disabled selected>Select day</option>
+                                    <option value="Monday">Monday</option>
+                                    <option value="Tuesday">Tuesday</option>
+                                    <option value="Wednesday">Wednesday</option>
+                                    <option value="Thursday">Thursday</option>
+                                    <option value="Friday">Friday</option>
+                                    <option value="Saturday">Saturday</option>
+                                    <option value="Sunday">Sunday</option>
+                                </select>
+                                
+                                    <select required name='hours' class="dropDown" [(ngModel)]="reserve.hours">
+                                        <option value="" disabled selected>Select hour</option>
+                                        <option value="10-00">10:00</option>
+                                        <option value="12-00">12:00</option>
+                                        <option value="14-00">14:00</option>
+                                        <option value="16-00">16:00</option>
+                                        <option value="18-00">18:00</option>
+                                        <option value="20-00">20:00</option>
+                                        <option value="22-00">22:00</option>
+                                    </select>
+                               
+                            
+                                    <select required  name='noOfPersons' class="dropDown" [(ngModel)]="reserve.noOfPersons">
+                                        <option value="" disabled selected>How many persons?</option>
+                                        <option value="1">1 Person</option>
+                                        <option value="2">2 Persons</option>
+                                        <option value="3">3 Persons</option>
+                                        <option value="4">4 Persons</option>
+                                        <option value="5">5 Persons</option>
+                                        <option value="6">6 Persons</option>
+                                    </select>
+                            <button type="submit" class="btn" (click)="bookATable()">Reserve</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
